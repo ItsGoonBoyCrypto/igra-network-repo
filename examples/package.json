@@ -1,0 +1,24 @@
+{
+  "name": "igra-network-examples",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hardhat examples for Igra Network — ERC-20, ERC-721, Counter, integration patterns.",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:token:testnet": "hardhat run deploy-token.js --network igraTestnet",
+    "deploy:counter:testnet": "hardhat run deploy-counter.js --network igraTestnet",
+    "deploy:nft:testnet": "hardhat run deploy-nft.js --network igraTestnet",
+    "deploy:token:mainnet": "hardhat run deploy-token.js --network igraMainnet",
+    "deploy:counter:mainnet": "hardhat run deploy-counter.js --network igraMainnet",
+    "deploy:nft:mainnet": "hardhat run deploy-nft.js --network igraMainnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}

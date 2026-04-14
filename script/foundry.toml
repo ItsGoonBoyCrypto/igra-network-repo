@@ -1,0 +1,18 @@
+[profile.default]
+src = "../examples"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.24"
+optimizer = true
+optimizer_runs = 200
+remappings = [
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+]
+
+[rpc_endpoints]
+igra_mainnet = "https://rpc.igralabs.com:8545"
+igra_testnet = "https://galleon-testnet.igralabs.com:8545"
+
+[etherscan]
+igra_mainnet = { key = "blockscout", url = "https://explorer.igralabs.com/api", chain = 38833 }
+igra_testnet = { key = "blockscout", url = "https://explorer.galleon-testnet.igralabs.com/api", chain = 38836 }
